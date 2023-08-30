@@ -130,9 +130,9 @@ input[type="submit"] {
 }
 .v-field--variant-filled .v-field__overlay {
     background-color: transparent !important;
-    opacity: 0.04;
+    opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid black;
+    border: 3px solid red;
     border-radius: 30px;
 }
 /* .v-field--center-affix .v-label.v-field-label {
