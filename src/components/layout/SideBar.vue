@@ -6,22 +6,40 @@
         <img src="../../assets/image/logo.svg" alt="logo" />
       </v-list-item>
     </template>
-    <v-list-item>
-      <v-icon> mdi-home </v-icon>
+    <v-list-item
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding-right: 35px;
+      "
+    >
+      <v-icon style="padding-left: 5px"> mdi-home </v-icon>
       <router-link to="/">الإحصائيات</router-link>
     </v-list-item>
     <v-list v-model:opened="open">
       <v-list-group value="Users">
         <v-list-group v-for="item in groups">
           <template v-slot:activator="{ props }">
-            <v-list-item v-bind="props">
+            <v-list-item
+              v-bind="props"
+              style="display: flex; flex-direction: row; justify-content: start"
+            >
               <v-icon>{{ item.action }} </v-icon>
               <span v-text="item.title"> </span>
             </v-list-item>
           </template>
 
           <v-list-item v-for="childIiem in item.items">
-            <ul>
+            <ul
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                list-style: none;
+              "
+            >
               <li>
                 <router-link :to="childIiem.showAll"> عرض الكل</router-link>
               </li>
