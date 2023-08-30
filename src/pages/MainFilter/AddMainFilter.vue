@@ -50,9 +50,9 @@
           />
         </div>
       </div>
-      <v-text-field label="الإسم (عربي)" width="100%"/>
+      <v-text-field label="الإسم (عربي)" variant="outlined"/>
 
-      <v-text-field label="الإسم (إنجليزي)" variant="outlined"/>
+      <v-text-field label="الإسم (إنجليزي)" color="red"/>
 
 
       <input type="submit" value="حفظ" />
@@ -130,13 +130,15 @@ input[type="submit"] {
 }
 .v-field--variant-filled .v-field__overlay {
     background-color: transparent !important;
-    /* opacity: 0.04; */
+    opacity: 0.04;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid black;
+    border-radius: 30px;
 }
-.v-field--center-affix .v-label.v-field-label {
+/* .v-field--center-affix .v-label.v-field-label {
     top: 50%;
     transform: translateY(-50%);
     color: var(--main-color) !important;
     /* font-size: 1px; */
-}
+/* }  */
 </style>
