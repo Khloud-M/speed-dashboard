@@ -1,11 +1,24 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+        <router-view />
     </v-main>
   </v-app>
 </template>
 
-<script setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+<script>
+export default {
+  mounted() {
+    document.body.dir = "rtl";
+  },
+};
 </script>
+<style >
+.v-main{
+  background-color: var(--main_bg_clr);
+  direction: rtl;
+}
+body , .v-app{
+  direction: rtl;
+}
+</style>
