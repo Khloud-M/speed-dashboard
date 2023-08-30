@@ -7,7 +7,8 @@
     <form style="margin: 30px 0">
       <v-row class="container_add">
         <v-col cols="lg-3">
-          <v-text-field label="الإسم (عربي)" variant="outlined"> </v-text-field>
+          <v-text-field class="input" label="الإسم (عربي)" variant="outlined">
+          </v-text-field>
         </v-col>
         <v-col cols="lg-3">
           <v-text-field label="الإسم (إنجليزي)" variant="outlined">
@@ -96,7 +97,5 @@ input[type="submit"] {
   display: block;
   margin: auto;
 }
-.v-field--variant-outlined .v-field__outline {
-  border-radius: 0 !important;
-}
+
 </style>

@@ -147,4 +147,8 @@ input[type="submit"] {
   width: 150px;
   font-weight: bold;
 }
+.v-field{
+  border-radius: 0 !important;
+}
+
 </style>
