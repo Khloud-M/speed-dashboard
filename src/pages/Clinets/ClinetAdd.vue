@@ -52,25 +52,23 @@
       </div>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
         <v-col cols="lg-6">
-          <v-text-field label="الإسم (عربي)" variant="outlined" width="100%">
+          <v-text-field label="الإسم (عربي)"  width="100%">
           </v-text-field>
         </v-col>
         <v-col cols="lg-6">
           <v-text-field
             label="الإسم (إنجليزي)"
-            variant="outlined"
           ></v-text-field>
         </v-col>
       </v-row>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
         <v-col cols="lg-6">
-          <v-text-field label="الإسم (عربي)" variant="outlined" width="100%">
+          <v-text-field label="الإسم (عربي)" width="100%">
           </v-text-field>
         </v-col>
         <v-col cols="lg-6">
           <v-text-field
             label="الإسم (إنجليزي)"
-            variant="outlined"
           ></v-text-field>
         </v-col>
       </v-row>

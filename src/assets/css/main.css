@@ -16,4 +16,18 @@ h3{
 .active{
   color: gray;
 }
+.v-field--variant-filled .v-field__overlay {
+  background-color: transparent !important;
+  opacity: 1 !important;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+}
+.v-field--variant-filled .v-field__outline::before, .v-field--variant-underlined .v-field__outline::before {
+  border-color: transparent !important;
+  border-style: none !important;
+}
+.v-field--variant-filled .v-field__outline::after, .v-field--variant-underlined .v-field__outline::after {
+border-color: transparent !important;
+  border-style: none !important;
+}
 
