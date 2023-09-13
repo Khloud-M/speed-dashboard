@@ -52,13 +52,10 @@
       </div>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
         <v-col cols="lg-6">
-          <v-text-field label="الاسم"  width="100%">
-          </v-text-field>
+          <v-text-field label="الاسم" width="100%"> </v-text-field>
         </v-col>
         <v-col cols="lg-6">
-          <v-text-field type="tel"
-            label="الهاتف"
-          ></v-text-field>
+          <v-text-field type="tel" label="الهاتف"></v-text-field>
         </v-col>
       </v-row>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
@@ -67,12 +64,25 @@
           </v-text-field>
         </v-col>
         <v-col cols="lg-6">
-          <v-text-field
-            label="كلمة المرور"
-            type="password"
-          ></v-text-field>
+          <v-text-field label="كلمة المرور" type="password"></v-text-field>
         </v-col>
       </v-row>
+      <v-radio-group>
+        <v-row
+          style="width: 100%; display: flex; justify-content: space-between"
+        >
+          <v-col cols="lg-6">
+            <v-radio label="حظر" value="1"></v-radio>
+          </v-col>
+          <v-col cols="lg-6">
+            <v-radio label="مفعل" value="2"></v-radio>
+          </v-col>
+          <v-col cols="lg-12">
+            <v-textarea label="سبب الحظر "></v-textarea>
+          </v-col>
+        </v-row>
+      </v-radio-group>
+
       <input type="submit" value="حفظ" />
     </form>
   </div>
@@ -146,8 +156,7 @@ input[type="submit"] {
   width: 150px;
   font-weight: bold;
 }
-.v-field{
+.v-field {
   border-radius: 0 !important;
 }
-
 </style>
