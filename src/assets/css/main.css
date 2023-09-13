@@ -30,4 +30,16 @@ h3{
 border-color: transparent !important;
   border-style: none !important;
 }
+input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 150px;
+  font-weight: bold;
+}
+.active{
+  /* background-color: red; */
+  color: var(--main-color);
+}
 

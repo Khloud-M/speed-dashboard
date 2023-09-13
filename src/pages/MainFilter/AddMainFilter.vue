@@ -67,7 +67,7 @@ export default {
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "mainFilters/add",
+        href: "/",
       },
       {
         title: "تصنيفات الرئيسية",
@@ -92,6 +92,11 @@ export default {
 </script>
 
 <style>
+/* .v-breadcrumbs-item--link {
+    color: inherit;
+    text-decoration: none;
+    color: red !important;
+} */
 .mainfilter {
   margin: 15px auto;
   display: flex;
@@ -119,12 +124,5 @@ export default {
   direction: rtl !important;
   width: 100%;
 }
-input[type="submit"] {
-  background-color: var(--main-color);
-  color: white;
-  border-radius: 20px;
-  padding: 10px;
-  width: 150px;
-  font-weight: bold;
-}
+
 </style>

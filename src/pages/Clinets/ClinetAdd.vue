@@ -52,23 +52,24 @@
       </div>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
         <v-col cols="lg-6">
-          <v-text-field label="الإسم (عربي)"  width="100%">
+          <v-text-field label="الاسم"  width="100%">
           </v-text-field>
         </v-col>
         <v-col cols="lg-6">
-          <v-text-field
-            label="الإسم (إنجليزي)"
+          <v-text-field type="tel"
+            label="الهاتف"
           ></v-text-field>
         </v-col>
       </v-row>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
         <v-col cols="lg-6">
-          <v-text-field label="الإسم (عربي)" width="100%">
+          <v-text-field label="البريد الإلكتروني" width="100%" type="email">
           </v-text-field>
         </v-col>
         <v-col cols="lg-6">
           <v-text-field
-            label="الإسم (إنجليزي)"
+            label="كلمة المرور"
+            type="password"
           ></v-text-field>
         </v-col>
       </v-row>

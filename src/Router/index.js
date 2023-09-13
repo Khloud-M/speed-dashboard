@@ -74,7 +74,9 @@ const router = createRouter({
       ],
     },
   ],
+  // linkActiveClass: "active",
   linkActiveClass: "active",
+
 });
 
 export default router;

@@ -24,6 +24,7 @@ export default {
         href: "mainFilters/add",
       },
     ],
+
   }),
 };
 </script>
