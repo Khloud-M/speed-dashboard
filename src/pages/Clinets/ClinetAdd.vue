@@ -72,13 +72,16 @@
           style="width: 100%; display: flex; justify-content: space-between"
         >
           <v-col cols="lg-6">
-            <v-radio label="حظر" value="1"></v-radio>
+            <v-radio label="حظر" value="1" @click="block"></v-radio>
           </v-col>
           <v-col cols="lg-6">
-            <v-radio label="مفعل" value="2"></v-radio>
+            <v-radio label="مفعل" value="2" @click="unblock"></v-radio>
           </v-col>
           <v-col cols="lg-12">
-            <v-textarea label="سبب الحظر "></v-textarea>
+            <v-textarea
+              label="سبب الحظر "
+              :disabled="disabledShow"
+            ></v-textarea>
           </v-col>
         </v-row>
       </v-radio-group>
@@ -91,6 +94,7 @@
 <script>
 export default {
   data: () => ({
+    disabledShow: false,
     imgSrc: null,
     items: [
       {
@@ -115,6 +119,12 @@ export default {
       const file = event.target.files[0];
       this.imgSrc = URL.createObjectURL(file);
       console.log(this.imgSrc);
+    },
+    block() {
+      this.disabledShow = true;
+    },
+    unblock() {
+      this.disabledShow = false;
     },
   },
 };
