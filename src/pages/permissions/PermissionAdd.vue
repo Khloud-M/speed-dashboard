@@ -14,7 +14,7 @@
           </v-text-field>
         </v-col>
         <v-col cols="lg-3">
-          <v-text-field label="التصنيف الرئيسي">
+          <v-text-field label="الصالحيات">
           </v-text-field>
         </v-col>
       </v-row>

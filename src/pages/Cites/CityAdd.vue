@@ -10,12 +10,10 @@
           <v-text-field label="الإسم (عربي)"> </v-text-field>
         </v-col>
         <v-col cols="lg-3">
-          <v-text-field label="الإسم (إنجليزي)" >
-          </v-text-field>
+          <v-text-field label="الإسم (إنجليزي)"> </v-text-field>
         </v-col>
         <v-col cols="lg-3">
-          <v-text-field label="التصنيف الرئيسي" >
-          </v-text-field>
+          <v-select :items="item" density="compact" label="الدولة"></v-select>
         </v-col>
       </v-row>
 
@@ -28,6 +26,8 @@
 export default {
   data: () => ({
     imgSrc: null,
+    item: ["Foo", "Bar", "Fizz", "Buzz"],
+
     items: [
       {
         title: "الصفحة الرئيسية",

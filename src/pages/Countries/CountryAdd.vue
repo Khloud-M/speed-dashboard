@@ -6,15 +6,11 @@
     <h3>إضافة جديد</h3>
     <form style="margin: 30px 0">
       <v-row class="container_add">
-        <v-col cols="lg-3">
+        <v-col cols="lg-10">
           <v-text-field label="الإسم (عربي)" > </v-text-field>
         </v-col>
-        <v-col cols="lg-3">
+        <v-col cols="lg-10">
           <v-text-field label="الإسم (إنجليزي)">
-          </v-text-field>
-        </v-col>
-        <v-col cols="lg-3">
-          <v-text-field label="التصنيف الرئيسي">
           </v-text-field>
         </v-col>
       </v-row>
