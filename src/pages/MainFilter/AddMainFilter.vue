@@ -67,7 +67,7 @@ export default {
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "/",
+        href: "/mainFilters/add",
       },
       {
         title: "تصنيفات الرئيسية",

@@ -37,12 +37,12 @@ export default {
       {
         title: "تصنيفات فرعية",
         disabled: false,
-        href: "/mainFilters",
+        href: "/supFilters",
       },
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "mainFilters/add",
+        href: "/supFilters/add",
       },
     ],
   }),

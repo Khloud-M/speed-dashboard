@@ -100,12 +100,12 @@ export default {
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "mainFilters/add",
+        href: "/clients/add",
       },
       {
         title: "تصنيفات الرئيسية",
         disabled: false,
-        href: "/mainFilters",
+        href: "/clients",
       },
       {
         title: "الصفحة الرئيسية",

@@ -43,7 +43,7 @@ export default {
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "mainFilters/add",
+        href: "/",
       },
     ],
   }),

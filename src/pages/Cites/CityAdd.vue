@@ -32,17 +32,17 @@ export default {
       {
         title: "الصفحة الرئيسية",
         disabled: false,
-        href: "/",
+        href: "/cities/add",
       },
       {
         title: "تصنيفات فرعية",
         disabled: false,
-        href: "/mainFilters",
+        href: "/cities",
       },
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "mainFilters/add",
+        href: "/",
       },
     ],
   }),

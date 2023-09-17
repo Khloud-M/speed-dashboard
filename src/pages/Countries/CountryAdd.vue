@@ -28,17 +28,17 @@ export default {
       {
         title: "الصفحة الرئيسية",
         disabled: false,
-        href: "/",
+        href: "/countries/add",
       },
       {
         title: "تصنيفات فرعية",
         disabled: false,
-        href: "/mainFilters",
+        href: "/countries",
       },
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "mainFilters/add",
+        href: "/",
       },
     ],
   }),

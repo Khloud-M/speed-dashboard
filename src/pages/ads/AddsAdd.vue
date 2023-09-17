@@ -205,12 +205,12 @@ export default {
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "/",
+        href: "/ades/add",
       },
       {
         title: "تصنيفات الرئيسية",
         disabled: false,
-        href: "/mainFilters",
+        href: "/ades",
       },
       {
         title: "الصفحة الرئيسية",

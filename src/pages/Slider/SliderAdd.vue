@@ -84,7 +84,7 @@ export default {
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "/",
+        href: "/sliders/add",
       },
       {
         title: "تصنيفات الرئيسية",
