@@ -52,24 +52,22 @@
       </div>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
         <v-col cols="lg-6">
-          <v-text-field label="الإسم (عربي)" width="100%">
+          <v-text-field label="العنوان (عربي)" width="100%">
           </v-text-field>
         </v-col>
         <v-col cols="lg-6">
           <v-text-field
-            label="الإسم (إنجليزي)"
+            label="العنوان (إنجليزي)"
           ></v-text-field>
         </v-col>
       </v-row>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
         <v-col cols="lg-6">
-          <v-text-field label="الإسم (عربي)" width="100%">
-          </v-text-field>
+          <v-textarea label="المحتوى (عربي)"></v-textarea>
+
         </v-col>
         <v-col cols="lg-6">
-          <v-text-field
-            label="الإسم (إنجليزي)"
-          ></v-text-field>
+          <v-textarea label="المحتوى (انجليزي)"></v-textarea>
         </v-col>
       </v-row>
       <input type="submit" value="حفظ" />
