@@ -19,23 +19,35 @@
         </v-text-field>
       </v-col>
       <v-col cols="lg-6">
-        <v-text-field label=" تاريخ البدء" width="100%" type="number"> </v-text-field>
+        <v-text-field label=" تاريخ البدء" width="100%" type="number">
+        </v-text-field>
       </v-col>
       <v-col cols="lg-6">
-        <v-text-field label=" تاريخ الانتهاء" width="100%" type="week"> </v-text-field>
+        <v-menu>
+          <template v-slot:activator="{ on, attrs }">
+            <v-text-field
+              label="تاريخ الانتهاء"
+              readonly
+              v-bind="attrs"
+              v-on="on"
+            ></v-text-field>
+          </template>
+        </v-menu>
+        <!-- <v-date-picker></v-date-picker> -->
+
         <!-- <input type="month" -->
       </v-col>
       <!-- <input type="datetime" -->
     </v-row>
     <input type="submit" value="حفظ" />
   </div>
-
 </template>
 
 <script>
 export default {
   data: () => ({
     imgSrc: null,
+    menu: false,
     items: [
       {
         title: " إضافة تصنيف",
@@ -53,7 +65,6 @@ export default {
         href: "/",
       },
     ],
-
   }),
   methods: {
     onFileSelected(event) {

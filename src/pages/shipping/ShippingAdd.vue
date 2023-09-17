@@ -6,16 +6,11 @@
     <h3>إضافة جديد</h3>
     <form style="margin: 30px 0">
       <v-row class="container_add">
-        <v-col cols="lg-3">
-          <v-text-field class="input" label="الإسم (عربي)" variant="outlined">
-          </v-text-field>
+        <v-col cols="lg-5">
+          <v-text-field label="الإسم (عربي)"> </v-text-field>
         </v-col>
-        <v-col cols="lg-3">
-          <v-text-field label="الإسم (إنجليزي)" variant="outlined">
-          </v-text-field>
-        </v-col>
-        <v-col cols="lg-3">
-          <v-text-field label="التصنيف الرئيسي" variant="outlined">
+        <v-col cols="lg-5">
+          <v-text-field label="الإسم (إنجليزي)">
           </v-text-field>
         </v-col>
       </v-row>
@@ -33,17 +28,17 @@ export default {
       {
         title: "الصفحة الرئيسية",
         disabled: false,
-        href: "/",
+        href: "/status/add",
       },
       {
         title: "تصنيفات فرعية",
         disabled: false,
-        href: "/mainFilters",
+        href: "/status",
       },
       {
         title: " إضافة تصنيف",
         disabled: false,
-        href: "/",
+        href: "/supFilters/add",
       },
     ],
   }),
@@ -97,5 +92,7 @@ input[type="submit"] {
   display: block;
   margin: auto;
 }
-
+.v-field--variant-outlined .v-field__outline {
+  border-radius: 0 !important;
+}
 </style>
