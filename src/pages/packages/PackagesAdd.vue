@@ -4,82 +4,33 @@
   </div>
   <div class="filter_add">
     <h3>إضافة جديد</h3>
-    <form class="container_add">
-      <div class="image" style="position: relative; z-index: 1">
-        <div
-          class="edit"
-          style="
-            background-color: var(--gray-color);
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-          "
-        >
-          <img v-if="imgSrc" :src="imgSrc" style="width: 100%" />
-          <label
-            for="file"
-            v-else
-            style="position: absolute; top: 50%; left: 40px; color: white"
-            >Main Image</label
-          >
-          <label
-            for="file"
-            style="
-              position: absolute;
-              bottom: -20%;
-              z-index: 9999;
-              left: 50px;
-              color: black;
-              background-color: white;
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              text-align: center;
-              line-height: 40px;
-              cursor: pointer;
-            "
-            ><v-icon> mdi-file-edit-outline</v-icon></label
-          >
-          <input
-            type="file"
-            id="file"
-            accept="image/gif, image/jpeg, image/png"
-            style="display: none"
-            @change="(e) => onFileSelected(e)"
-          />
-        </div>
-      </div>
-      <v-row style="width: 100%; display: flex; justify-content: space-between">
-        <v-col cols="lg-6">
-          <v-text-field label="العنوان (عربي)" width="100%"> </v-text-field>
-        </v-col>
-        <v-col cols="lg-6">
-          <v-text-field label="العنوان (إنجليزي)"></v-text-field>
-        </v-col>
-      </v-row>
-      <v-row style="width: 100%; display: flex; justify-content: space-between">
-        <v-col cols="lg-6">
-          <v-textarea label="المحتوى (عربي)"></v-textarea>
-        </v-col>
-        <v-col cols="lg-6">
-          <v-textarea label="المحتوى (انجليزي)"></v-textarea>
-        </v-col>
-        <v-col cols="lg-6">
-          <v-text-field label="عدد الاعلانات" width="100%" type="number">
-          </v-text-field>
-        </v-col>
-        <v-col cols="lg-6">
-          <v-text-field label=" السعر" width="100%" type="number">
-          </v-text-field>
-        </v-col>
-        <v-col cols="lg-12">
-          <v-text-field label=" المدة" width="100%" type="number">
-          </v-text-field>
-        </v-col>
-      </v-row>
-      <input type="submit" value="حفظ" />
-    </form>
+    <v-row style="width: 100%; display: flex; justify-content: space-between">
+      <v-col cols="lg-6">
+        <v-text-field label="العنوان (عربي)" width="100%"> </v-text-field>
+      </v-col>
+      <v-col cols="lg-6">
+        <v-text-field label="العنوان (إنجليزي)"></v-text-field>
+      </v-col>
+    </v-row>
+    <v-row style="width: 100%; display: flex; justify-content: space-between">
+      <v-col cols="lg-6">
+        <v-textarea label="المحتوى (عربي)"></v-textarea>
+      </v-col>
+      <v-col cols="lg-6">
+        <v-textarea label="المحتوى (انجليزي)"></v-textarea>
+      </v-col>
+      <v-col cols="lg-6">
+        <v-text-field label="عدد الاعلانات" width="100%" type="number">
+        </v-text-field>
+      </v-col>
+      <v-col cols="lg-6">
+        <v-text-field label=" السعر" width="100%" type="number"> </v-text-field>
+      </v-col>
+      <v-col cols="lg-12">
+        <v-text-field label=" المدة" width="100%" type="number"> </v-text-field>
+      </v-col>
+    </v-row>
+    <input type="submit" value="حفظ" />
   </div>
 </template>
 
