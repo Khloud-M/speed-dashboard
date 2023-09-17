@@ -1,7 +1,7 @@
 <template>
   <div>
     <SideBar />
-    <div style="width: 95%; margin: auto;">
+    <div style="width: 90%; margin: auto;">
       <TheNav />
       <transition name="slide-fade" mode="out-in">
         <router-view></router-view>

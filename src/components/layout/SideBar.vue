@@ -1,6 +1,6 @@
 <template>
   <!-- <v-card class="mx-auto" width="300"> -->
-  <v-navigation-drawer permanent location="right">
+  <v-navigation-drawer permanent location="right" style="width: 300px;">
     <template v-slot:prepend>
       <v-list-item max-width="210px" class="my-3 mx-auto">
         <img src="../../assets/image/logo.svg" alt="logo" />
@@ -146,10 +146,22 @@ export default {
   }),
 };
 </script>
-<style >
+<style scoped >
+li,
+a {
+  font-size: 20px;
+  color: black;
+}
+
+span {
+  font-size: 20px;
+}
+.v-list-item.v-list-item--link.v-list-item--density-default.v-list-item--one-line.v-list-item--variant-text.v-list-group__header {
+  justify-content: space-between !important;
+}
 .main_title {
   display: flex;
-  background-color: red;
+  /* background-color: red; */
   justify-content: space-between;
   align-items: center;
 }

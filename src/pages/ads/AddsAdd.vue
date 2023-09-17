@@ -50,6 +50,69 @@
           />
         </div>
       </div>
+      <div
+        class="images"
+        style="
+          background-color: var(--gray-color);
+          width: 250px;
+          height: 120px;
+          border-radius: 15px;
+        "
+      >
+        <label for="imgs_upload">
+          <div style="text-align: center; margin-top: 50px">
+            <v-icon v-for="n in 3" :key="n" color="white">
+              mdi-image-area</v-icon
+            >
+          </div>
+        </label>
+        <input
+          type="file"
+          id="imgs_upload"
+          accept="image/gif, image/jpeg, image/png"
+          style="display: none"
+          @change="(e) => onImgsSelected(e)"
+        />
+      </div>
+      <div
+        class="display_imgs"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: center;
+          column-gap: 10px;
+        "
+      >
+        <div v-for="(pic, index) in imgsSrc" :key="index" style="width: 150px ;
+                position: relative;
+
+        ">
+          <img
+            :src="pic"
+            style="
+              width: 100%;
+              /* object-fit: contain; */
+              /* position: relative; */
+              z-index: 1;
+              background-color: aqua;
+            "
+          />
+          <v-icon
+            color="white"
+            style="
+              position: absolute;
+              z-index: 9;
+              top: 10px;
+              left: 10px;
+
+            "
+            @click="deletImg(index)"
+          >
+            mdi-window-close</v-icon
+          >
+        </div>
+      </div>
       <v-text-field label="الإسم " />
       <v-textarea label="الوصف "></v-textarea>
       <v-row style="width: 100%; display: flex; justify-content: space-between">
@@ -111,7 +174,10 @@
             />
           </v-col>
           <v-col cols="lg-6">
-            <v-text-field label=" قيمة بدء المزاد  " :disabled="disabledaddProduct" />
+            <v-text-field
+              label=" قيمة بدء المزاد  "
+              :disabled="disabledaddProduct"
+            />
           </v-col>
         </v-row>
         <div class="sell_product" style="width: 100%">
@@ -134,6 +200,7 @@ export default {
     disabledaddProduct: false,
     disabledSellProduct: false,
     imgSrc: null,
+    imgsSrc: [],
     items: [
       {
         title: " إضافة تصنيف",
@@ -158,14 +225,24 @@ export default {
       this.imgSrc = URL.createObjectURL(file);
       console.log(this.imgSrc);
     },
+    onImgsSelected(event) {
+      const Arrayfiles = Array.from(event.target.files);
+      Arrayfiles.forEach((element) => {
+        this.imgsSrc.push(URL.createObjectURL(element));
+        console.log(this.imgsSrc);
+      });
+    },
+    deletImg(index){
+      this.imgsSrc.splice(index,1);
+    },
     disabledDiv() {
       this.disabledSellProduct = false;
       this.disabledaddProduct = true;
     },
-    addPrduct(){
+    addPrduct() {
       this.disabledSellProduct = true;
       this.disabledaddProduct = false;
-    }
+    },
   },
 };
 </script>
