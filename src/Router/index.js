@@ -33,6 +33,10 @@ import AdminsAdd from "@/pages/admins/AdminsAdd.vue";
 import CommonQuestions from "@/pages/commonQuestions/CommonQuestions.vue";
 import commonQuestionsAdd from "@/pages/commonQuestions/commonQuestionsAdd.vue";
 import mainSetting from "@/pages/settings/mainSetting.vue";
+import whoUS from "@/pages/settings/whoUS.vue";
+import TermsConditions from "@/pages/settings/TermsConditions.vue";
+import thePrivacy from "@/pages/settings/thePrivacy.vue";
+import contactUs from "@/pages/settings/contactUs.vue";
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
@@ -72,7 +76,16 @@ const router = createRouter({
         { path: "admins/add", component: AdminsAdd },
         { path: "/commonQuestions", component: CommonQuestions },
         { path: "commonQuestions/add", component: commonQuestionsAdd },
-        { path: "/mainSetting", component: mainSetting },
+        {
+          path: "/mainSetting",
+          component: mainSetting,
+          children: [
+            { path: "", component: whoUS },
+            { path: "condition", component: TermsConditions },
+            { path: "privacy", component: thePrivacy },
+            { path: "contactUs", component: contactUs },
+          ],
+        },
       ],
     },
   ],
