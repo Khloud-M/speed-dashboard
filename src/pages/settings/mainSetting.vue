@@ -14,6 +14,7 @@
         <router-link to="/mainSetting/contactUs"> اتصل بنا </router-link>
       </div>
     </div>
+    <hr />
     <router-view></router-view>
   </div>
 </template>
@@ -25,6 +26,11 @@ export default {
 </script>
 
 <style scoped>
+hr {
+  display: block;
+  margin: 20px 0;
+  border: 1px dashed black;
+}
 .filter_add {
   background-color: white;
   box-shadow: var(--main_box_shadow);
@@ -42,7 +48,6 @@ export default {
   background-color: var(--main-color);
   border-radius: 2px 13px 4px 15px;
   padding: 7px 15px;
-
 }
 .setting div a {
   color: white;
@@ -51,9 +56,8 @@ export default {
 .setting div a:hover {
   color: black !important;
 }
-.active{
+.active {
   color: black !important;
-
 }
 
 .v-locale--is-ltr {

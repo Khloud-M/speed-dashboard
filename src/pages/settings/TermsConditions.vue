@@ -1,13 +1,19 @@
 <template>
-  Terms and condiition
+  <div class="wrapper">
+    <h2>الشروط والأحكام</h2>
+    <v-icon>mdi-note-edit-outline </v-icon>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 </style>
