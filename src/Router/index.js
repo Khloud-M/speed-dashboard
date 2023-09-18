@@ -32,6 +32,7 @@ import TheAdmins from "@/pages/admins/TheAdmins.vue";
 import AdminsAdd from "@/pages/admins/AdminsAdd.vue";
 import CommonQuestions from "@/pages/commonQuestions/CommonQuestions.vue";
 import commonQuestionsAdd from "@/pages/commonQuestions/commonQuestionsAdd.vue";
+import mainSetting from "@/pages/settings/mainSetting.vue";
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
@@ -71,12 +72,12 @@ const router = createRouter({
         { path: "admins/add", component: AdminsAdd },
         { path: "/commonQuestions", component: CommonQuestions },
         { path: "commonQuestions/add", component: commonQuestionsAdd },
+        { path: "/mainSetting", component: mainSetting },
       ],
     },
   ],
   // linkActiveClass: "active",
   linkActiveClass: "active",
-
 });
 
 export default router;

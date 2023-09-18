@@ -1,6 +1,6 @@
 <template>
   <!-- <v-card class="mx-auto" width="300"> -->
-  <v-navigation-drawer permanent location="right" style="width: 300px;">
+  <v-navigation-drawer permanent location="right" style="width: 300px">
     <template v-slot:prepend>
       <v-list-item max-width="210px" class="my-3 mx-auto">
         <img src="../../assets/image/logo.svg" alt="logo" />
@@ -51,6 +51,17 @@
         </v-list-group>
       </v-list-group>
     </v-list>
+    <v-list-item
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding-right: 35px;
+      "
+    >
+      <v-icon style="padding-left: 5px"> mdi-cog </v-icon>
+      <router-link to="/mainSetting">الإعدادت</router-link>
+    </v-list-item>
   </v-navigation-drawer>
   <!-- </v-card> -->
 </template>
