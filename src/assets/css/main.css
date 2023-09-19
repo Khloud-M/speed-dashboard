@@ -30,7 +30,7 @@ h3{
 border-color: transparent !important;
   border-style: none !important;
 }
-input[type="submit"] {
+input[type="submit"]  {
   background-color: var(--main-color);
   color: white;
   border-radius: 20px;

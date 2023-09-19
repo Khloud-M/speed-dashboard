@@ -37,6 +37,8 @@ import whoUS from "@/pages/settings/whoUS.vue";
 import TermsConditions from "@/pages/settings/TermsConditions.vue";
 import thePrivacy from "@/pages/settings/thePrivacy.vue";
 import contactUs from "@/pages/settings/contactUs.vue";
+// login
+import theLogin from "@/pages/auth/theLogin.vue"
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
@@ -86,6 +88,8 @@ const router = createRouter({
             { path: "contactUs", component: contactUs },
           ],
         },
+        // login
+        {path:"/login" , component:theLogin}
       ],
     },
   ],

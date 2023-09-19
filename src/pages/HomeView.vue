@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SideBar />
+    <!-- <SideBar /> -->
     <div style="width: 90%; margin: auto;">
       <TheNav />
       <transition name="slide-fade" mode="out-in">
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import SideBar from "@/components/layout/SideBar.vue";
+// import SideBar from "@/components/layout/SideBar.vue";
 import TheNav from "@/components/HomeNav/TheNav.vue";
 export default {
   components: {
-    SideBar,
+    // SideBar,
     TheNav,
   },
 };
